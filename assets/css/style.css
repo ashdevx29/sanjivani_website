@@ -7902,3 +7902,185 @@ Buy Now Btn
 }
 
 
+/* join us page  */
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ================================================
+   MBBS Inner Page Content Styles
+   ================================================ */
+
+.inner-page-content {
+    background-color: #ffffff;
+}
+
+.pg-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inner-page-content h4 {
+    color: #14365B;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.inner-page-content h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #4EA4D2, #14365B);
+    border-radius: 3px;
+}
+
+.inner-page-content p {
+    color: #6b6b84;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.inner-page-content strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+/* List Styling */
+.list-2 {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-2 li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    color: #6b6b84;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.list-2 li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #4EA4D2;
+    font-size: 18px;
+    top: 2px;
+}
+
+/* Table Styling */
+.inner-page-content .table {
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+.inner-page-content .table th {
+    background-color: #14365B;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 16px 12px;
+    font-size: 15px;
+    text-align: left;
+    border: none;
+}
+
+.inner-page-content .table td {
+    padding: 14px 12px;
+    color: #6b6b84;
+    font-size: 15px;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+}
+
+.inner-page-content .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.inner-page-content .table-bordered {
+    border: 1px solid #e9ecef;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .inner-page-content h4 {
+        font-size: 24px;
+    }
+    
+    .inner-page-content p,
+    .inner-page-content li {
+        font-size: 15.5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .inner-page-content h4 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    
+    .inner-page-content .table th,
+    .inner-page-content .table td {
+        padding: 12px 8px;
+        font-size: 14.5px;
+    }
+}
+
+/* Extra Polish for Better Look */
+.inner-page-content ul {
+    margin-bottom: 25px;
+}
+
+.inner-page-content .table-responsive {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin: 25px 0;
+}
+
+/* Highlight Box for Important Notes */
+.important-note {
+    background-color: #f8f9fa;
+    border-left: 5px solid #4EA4D2;
+    padding: 20px 25px;
+    margin: 25px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.important-note p {
+    margin-bottom: 0;
+    color: #212529;
+}
+
+
+
+
+
+
+
+
+
+
