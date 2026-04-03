@@ -135,7 +135,7 @@
         <div class="container">
           <div class="main-responsive-menu">
             <div class="logo">
-              <a href="index.html">
+              <a href="/index.html">
                 <img
                   src="/assets/images/logo.png"
                   class="black-logo"
@@ -150,7 +150,7 @@
       <div class="main-navbar">
         <div class="container">
           <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/index.html">
               <img
                 src="/assets/images/logo.png"
                 class="black-logo"
@@ -350,7 +350,7 @@
               <h2> Privacy Policy</h2>
               <ul>
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="/index.html">Home</a>
                 </li>
                 <li> Privacy Policy</li>
               </ul>
@@ -440,6 +440,172 @@
     </div>
 </section>
 
+<div
+      id="enquiryPopup"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        padding: 20px;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          max-width: 400px;
+          background: #fff;
+          border-radius: 15px;
+          padding: 25px;
+          position: relative;
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        "
+      >
+        <!-- Close -->
+        <span
+          onclick="
+            document.getElementById('enquiryPopup').style.display = 'none'
+          "
+          style="
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 22px;
+            cursor: pointer;
+            font-weight: bold;
+          "
+          >&times;</span
+        >
+
+        <!-- Heading -->
+        <h2 style="text-align: center; margin-bottom: 5px; font-weight: 700">
+          Enquiry Form
+        </h2>
+
+        <p
+          style="
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 20px;
+            color: #555;
+          "
+        >
+          Get Free Career Guidance
+        </p>
+
+        <!-- Form -->
+        <form id="simpleForm">
+          <!-- Name -->
+          <input
+            type="text"
+            placeholder="Full Name"
+            required
+            style="
+              width: 100%;
+              height: 45px;
+              margin-bottom: 12px;
+              padding: 0 12px;
+              border-radius: 8px;
+              border: 1px solid #ccc;
+              color: #000;
+              font-weight: 400;
+            "
+          />
+
+          <!-- Phone -->
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            required
+            style="
+              width: 100%;
+              height: 45px;
+              margin-bottom: 12px;
+              padding: 0 12px;
+              border-radius: 8px;
+              border: 1px solid #ccc;
+              color: #000;
+              font-weight: 400;
+            "
+          />
+
+          <!-- Course -->
+          <div style="width: 100%; margin-bottom: 12px;">
+            <select 
+              id="course"
+              required
+              style="
+                width: 100% !important;
+                display: block;
+                height: 45px;
+                padding: 0 12px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                color: #000;
+              font-weight: 400;
+                background: #fff;
+              "
+            >
+              <option value="">Select Course</option>
+              <option>MBBS in India</option>
+              <option>MBBS Abroad</option>
+              <option>Medical PG</option>
+              <option>MBA</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <textarea
+            placeholder="Your Message"
+            style="
+              width: 100%;
+              height: 90px;
+              margin-bottom: 12px;
+              padding: 10px;
+              border-radius: 8px;
+              border: 1px solid #ccc;
+              color: #000;
+              font-weight: 400;
+              resize: none;
+            "
+          ></textarea>
+
+          <!-- Button -->
+          <button
+            type="submit"
+            style="
+              width: 100%;
+              height: 45px;
+              border: none;
+              border-radius: 8px;
+              background: linear-gradient(45deg, #4ea4d2, #09239f);
+              color: #fff;
+              font-size: 15px;
+              font-weight: bold;
+              cursor: pointer;
+            "
+          >
+            Submit Enquiry
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <a
+      href="https://wa.me/919999999999?text=Hello%20I%20want%20career%20guidance"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+
     
 
     <!-- Start Subscribe Area -->
@@ -488,7 +654,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="single-footer-widget">
               <div class="widget-logo">
-                <a href="index.html">
+                <a href="/index.html">
                   <img src="/assets/images/logo.png" alt="logo" />
                 </a>
               </div>
@@ -514,7 +680,7 @@
 
               <ul class="quick-links">
                 <li>
-                  <a href="index.html"
+                  <a href="/index.html"
                     ><i class="bx bxs-right-arrow"></i> Home</a
                   >
                 </li>
@@ -710,6 +876,40 @@
           }
         }
       })();
+    </script>
+    <script>
+      // Auto open popup after 2 sec
+      function closePopup() {
+        document.getElementById("enquiryPopup").style.display = "none";
+      }
+
+      // Auto open
+      window.onload = function () {
+        setTimeout(() => {
+          document.getElementById("enquiryPopup").style.display = "flex";
+        }, 2000);
+      };
+
+      // Form validation
+      document
+        .getElementById("enquiryForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let name = document.getElementById("name").value.trim();
+          let email = document.getElementById("email").value.trim();
+          let phone = document.getElementById("phone").value.trim();
+
+          if (name === "" || email === "" || phone === "") {
+            alert("Please fill all required fields!");
+            return;
+          }
+
+          alert("Enquiry Submitted Successfully!");
+
+          this.reset();
+          closePopup();
+        });
     </script>
   </body>
 </html>
